@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap');
+.content
+{
+    /* background-color: #0CBABA;
+    color: #380036; */
+    background-image: linear-gradient(#3f123d,#0CBABA);
+    /* background-image: linear-gradient(#251991,#011111); */
+    height: 100vh;
+    /* color:white; */
+}
+.title
+{
+    color:white;
+}
+.displayTime
+{
+    /* background-image: linear-gradient(#ffffffcd,#c1cfcf7b); */
+    background: rgba(255, 255, 255, 0.1);
+    width:50%;
+}
+.hide
+{
+    display: none;
+}
+.show
+{
+    display: block;
+}
+.btn-gradient
+{
+    background-image: linear-gradient(#0CBABA,#cbb9ca);
+}
+.timeNow
+{
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Taviraj', serif;
+    
+    font-size:5rem;
+}
+.title
+{
+    
+    font-family: 'Handlee', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+.other
+{
+    font-family: 'Handlee', cursive;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-size:2rem;
+    color: white;
+}
+@media(max-width:1200px)
+{
+    .displayTime
+    {
+    width:60%;
+    }
+    .timeNow
+    {
+    font-size:3rem;
+    }
+    .other
+    {
+        font-size:1.5rem;
+    }
+}
+@media(max-width:700px)
+{
+    .displayTime
+    {
+    width:80%;
+    }
+    .timeNow
+    {
+    font-size:2.5rem;
+    }
+    .other
+    {
+        font-size:0.1rem;
+    }
+}
+
+@media(max-width:450px)
+{
+    .displayTime
+    {
+    width:95%;
+    }
+    .timeNow
+    {
+    font-size:2rem;
+    }
+    .other
+    {
+        font-size:0.5rem;
+    }
+}
