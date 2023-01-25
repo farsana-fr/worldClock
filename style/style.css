@@ -3,7 +3,7 @@ body
 {
     height:100vh;
 }
-.content
+/* .content
 {
     /* background-color: #0CBABA;
     color: #380036; */
@@ -11,7 +11,7 @@ body
     
     /* height: 100vh; */
     /* color:white; */
-}
+} */
 .modal-content
 {
     background-image: linear-gradient(#3572c7,#0CBABA);
