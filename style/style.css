@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap');
+body
+{
+    height:100vh;
+}
 .content
 {
     /* background-color: #0CBABA;
