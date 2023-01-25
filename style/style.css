@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap");
 /* Lesson Learned: Body set height will work only if you are not creating a immediate child that encloses all the sub components */
 body {
-  height: 100vh;
+  height: 90vh;
 }
 
 .modal-content {
