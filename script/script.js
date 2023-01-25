@@ -1,4 +1,4 @@
-fetch(`https://worldtimeapi.org/api/timezone/${selectedLoc}`)
+fetch(`https://worldtimeapi.org/api/timezone/Asia/Kolkata`)
     .then((data) => data.json())
     .then((data) => displayRes(data));
 function selectTZ() {
