@@ -38,22 +38,7 @@ function displayRes(data) {
   hrs=clock.split(":")[0];
   standard = time.slice(time.indexOf("+"));
   //Store all necessary data Ends
-  if(hrs>12)
-  {
-    document.querySelector(".displayTime").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
-    // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
-    document.querySelector(".content").style.backgroundImage ="linear-gradient(#022222,#011111)";
-    // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)";
-    
-    
-  }
-  else
-  {
-    document.querySelector(".displayTime").style.backgroundImage ="background: rgba(255, 255, 255, 0.1)";
-    // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
-    document.querySelector(".content").style.backgroundImage ="linear-gradient(#715470,#0CBABA)";
-    // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)"; 
-  }
+ 
 
   displaySec.innerHTML = `
     <div class="displayTime container text-center text-light mt-5 border rounded-5 p-4">
@@ -67,4 +52,20 @@ function displayRes(data) {
                 </div>
     `;
   
+    if(hrs>12)
+    {
+      document.querySelector(".displayTime").style.backgroundImage ="linear-gradient(#626868,#011111)";
+      // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
+      document.querySelector(".content").style.backgroundImage ="linear-gradient(#022222,#011111)";
+      // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)";
+      
+      
+    }
+    else
+    {
+      document.querySelector(".displayTime").style.backgroundImage ="linear-gradient(#2a6bbe,#1feded)";
+      // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
+      document.querySelector(".content").style.backgroundImage ="linear-gradient(#2a6bbe,#1feded)";
+      // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)"; 
+    }
 }
