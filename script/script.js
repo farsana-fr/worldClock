@@ -1,3 +1,6 @@
+fetch(`https://worldtimeapi.org/api/timezone/${selectedLoc}`)
+    .then((data) => data.json())
+    .then((data) => displayRes(data));
 function selectTZ() {
   selectedLoc = document.querySelector(".form-select").value;
   fetch(`https://worldtimeapi.org/api/timezone/${selectedLoc}`)
