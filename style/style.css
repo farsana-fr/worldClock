@@ -1,107 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap');
-.content
-{
-    height:100vh;
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap");
+/* Lesson Learned: Body set height will work only if you are not creating a immediate child that encloses all the sub components */
+body {
+  height: 100vh;
 }
 
-.modal-content
-{
-    background-image: linear-gradient(#3572c7,#0CBABA);
-    color:white;
-    
+.modal-content {
+  background-image: linear-gradient(#3572c7, #0cbaba);
+  color: white;
 }
-.form-select
-{
-    background-color: black;
-    color:#0CBABA
+.form-select {
+  background-color: black;
+  color: #0cbaba;
 }
-.title
-{
-    color:white;
+.title {
+  color: white;
 }
-.displayTime
-{
-    /* background-image: linear-gradient(#ffffffcd,#c1cfcf7b); */
-    /* background: rgba(255, 255, 255, 0.1); */
-    /* background-image: linear-gradient(#2a6bbe,#1feded); */
-    width:50%;
+.displayTime {
+  /* background-image: linear-gradient(#ffffffcd,#c1cfcf7b); */
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* background-image: linear-gradient(#2a6bbe,#1feded); */
+  width: 50%;
 }
-.hide
-{
-    display: none;
+.hide {
+  display: none;
 }
-.show
-{
-    display: block;
+.show {
+  display: block;
 }
-.btn-gradient
-{
-    /* background-image: linear-gradient(#0CBABA,#cbb9ca); */
-    background-image:linear-gradient(#b9cae2,#43abd7)
+.btn-gradient {
+  /* background-image: linear-gradient(#0CBABA,#cbb9ca); */
+  background-image: linear-gradient(#b9cae2, #43abd7);
 }
-.timeNow
-{
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Taviraj', serif;
-    
-    font-size:5rem;
+.timeNow {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Taviraj", serif;
+
+  font-size: 5rem;
 }
-.title
-{
-    
-    font-family: 'Handlee', cursive;
-    font-family: 'Orbitron', sans-serif;
+.title {
+  font-family: "Handlee", cursive;
+  font-family: "Orbitron", sans-serif;
 }
-.other
-{
-    font-family: 'Taviraj', serif;
-    /* font-family: 'Handlee', cursive; */
-    font-size:1rem;
-    color: white;
+.other {
+  font-family: "Taviraj", serif;
+  /* font-family: 'Handlee', cursive; */
+  font-size: 1rem;
+  color: white;
 }
-@media(max-width:1200px)
-{
-    .displayTime
-    {
-    width:60%;
-    }
-    .timeNow
-    {
-    font-size:3rem;
-    }
-    .other
-    {
-        font-size:1.5rem;
-    }
+@media (max-width: 1200px) {
+  .displayTime {
+    width: 60%;
+  }
+  .timeNow {
+    font-size: 3rem;
+  }
+  .other {
+    font-size: 1.5rem;
+  }
 }
-@media(max-width:700px)
-{
-    .displayTime
-    {
-    width:80%;
-    }
-    .timeNow
-    {
-    font-size:2.5rem;
-    }
-    .other
-    {
-        font-size:0.1rem;
-    }
+@media (max-width: 700px) {
+  .displayTime {
+    width: 80%;
+  }
+  .timeNow {
+    font-size: 2.5rem;
+  }
+  .other {
+    font-size: 0.1rem;
+  }
 }
 
-@media(max-width:450px)
-{
-    .displayTime
-    {
-    width:95%;
-    }
-    .timeNow
-    {
-    font-size:2rem;
-    }
-    .other
-    {
-        font-size:1px;
-    }
+@media (max-width: 450px) {
+  .displayTime {
+    width: 95%;
+  }
+  .timeNow {
+    font-size: 2rem;
+  }
+  .other {
+    font-size: 1px;
+  }
 }
