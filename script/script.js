@@ -45,10 +45,10 @@ function displayRes(data) {
                 <h1 class="timeNow mb-5 mt-5">${clock} ${abbrev}</h1>
             </div>
                 <div class="mt-5 other">
-                    <h1 class="">Daylight Saving: ${daylightSaving}</h1>
-                    <h1 class="">Timezone: ${timeZone}(GMT${standard})</h1>
-                    <h1 class="">Date: ${date}/${month}/${year}</h1>
-                    <h1 class="">Day: ${week[day_ofW]}</h1>
+                    <h6 class="">Daylight Saving: ${daylightSaving}</h6>
+                    <h6 class="">Timezone: ${timeZone}(GMT${standard})</h6>
+                    <h6 class="">Date: ${date}/${month}/${year}</h6>
+                    <h6 class="">Day: ${week[day_ofW]}</h6>
                 </div>
     `;
   
@@ -69,3 +69,4 @@ function displayRes(data) {
       // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)"; 
     }
 }
+
