@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC&family=Handlee&family=Kavoon&family=Orbitron:wght@900&family=Taviraj&display=swap');
-body
+.content
 {
-    max-height:100vh;
+    height:100vh;
 }
 
 .modal-content
@@ -55,6 +55,7 @@ body
 .other
 {
     font-family: 'Taviraj', serif;
+    /* font-family: 'Handlee', cursive; */
     font-size:1rem;
     color: white;
 }
