@@ -1,6 +1,6 @@
 fetch(`https://worldtimeapi.org/api/timezone/Asia/Kolkata`)
-    .then((data) => data.json())
-    .then((data) => displayRes(data));
+  .then((data) => data.json())
+  .then((data) => displayRes(data));
 function selectTZ() {
   selectedLoc = document.querySelector(".form-select").value;
   fetch(`https://worldtimeapi.org/api/timezone/${selectedLoc}`)
@@ -22,7 +22,7 @@ function displayRes(data) {
   displaySec = document.querySelector(".displayContent");
 
   //Store all necessary data Starts
-  daylightSaving = data.dst ? "Yes" : "No";
+  daylightSaving = data.dst ? "On" : "Off";
   timeZone = data.timezone;
   time = data.datetime;
   day = data.week_number;
@@ -35,10 +35,9 @@ function displayRes(data) {
   date = date.split("-")[2];
   //Get the time
   clock = time.slice(time.indexOf("T") + 1, time.indexOf("."));
-  hrs=clock.split(":")[0];
+  hrs = clock.split(":")[0];
   standard = time.slice(time.indexOf("+"));
   //Store all necessary data Ends
- 
 
   displaySec.innerHTML = `
     <div class="displayTime container text-center text-light mt-5 border rounded-5 p-4">
@@ -51,22 +50,20 @@ function displayRes(data) {
                     <h6>Day: ${week[day_ofW]}</h6>
                 </div>
     `;
-  
-    if(hrs>12)
-    {
-      document.querySelector(".displayTime").style.backgroundImage ="linear-gradient(#626868,#011111)";
-      // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
-      document.querySelector(".content").style.backgroundImage ="linear-gradient(#022222,#011111)";
-      // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)";
-      
-      
-    }
-    else
-    {
-      document.querySelector(".displayTime").style.backgroundImage ="linear-gradient(#2a6bbe,#1feded)";
-      // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
-      document.querySelector(".content").style.backgroundImage ="linear-gradient(#2a6bbe,#1feded)";
-      // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)"; 
-    }
-}
 
+  if (hrs > 12) {
+    document.querySelector(".displayTime").style.backgroundImage =
+      "linear-gradient(#626868,#011111)";
+    // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
+    document.querySelector(".content").style.backgroundImage =
+      "linear-gradient(#022222,#011111)";
+    // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)";
+  } else {
+    document.querySelector(".displayTime").style.backgroundImage =
+      "linear-gradient(#2a6bbe,#1feded)";
+    // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
+    document.querySelector(".content").style.backgroundImage =
+      "linear-gradient(#2a6bbe,#1feded)";
+    // document.querySelector(".modal-content").style.backgroundImage ="linear-gradient(#022222,#011111)";
+  }
+}
