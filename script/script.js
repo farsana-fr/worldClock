@@ -1,4 +1,4 @@
-fetch(`http://worldtimeapi.org/api/timezone/Asia/Kolkata`).then(data=>data.json()).then(data=>displayRes(data));
+// fetch(`http://worldtimeapi.org/api/timezone/Asia/Kolkata`).then(data=>data.json()).then(data=>displayRes(data));
 
 function selectTZ() {
     selectedLoc=document.querySelector('.form-select').value;;
