@@ -40,11 +40,10 @@ function displayRes(data) {
   hrs = clock.split(":")[0];
   console.log(time);
   standard = time.slice(time.indexOf("+"));
-  
+
   //Handling negative GMT Starts
-  if(standard==0)
-  {
-    standard=time.slice(time.lastIndexOf("-"));
+  if (standard == 0) {
+    standard = time.slice(time.lastIndexOf("-"));
   }
   //Handling negative GMT Ends
 
@@ -62,7 +61,7 @@ function displayRes(data) {
                 </div>
     `;
 
-  if (hrs > 12) {
+  if (hrs >= 12) {
     document.querySelector(".displayTime").style.backgroundImage =
       "linear-gradient(#626868,#011111)";
     // document.querySelector(".btn-gradiente").style.backgroundImage ="linear-gradient(to top, #283E51, #0A2342)";
