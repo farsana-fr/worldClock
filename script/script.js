@@ -9,6 +9,8 @@ function selectTZ() {
 }
 
 function displayRes(data) {
+  console.log(data);
+
   //the API is providing only the number of week like 1 for Monday, hence to ease the process of taking out Day, the below week variable is used
   week = {
     1: "Monday",
@@ -36,7 +38,15 @@ function displayRes(data) {
   //Get the time
   clock = time.slice(time.indexOf("T") + 1, time.indexOf("."));
   hrs = clock.split(":")[0];
+  console.log(time);
   standard = time.slice(time.indexOf("+"));
+  //Handling negative GMT Starts
+  if(!Number(standard))
+  {
+    standard=time.slice(time.lastIndexOf("-"));
+  }
+  //Handling negative GMT Ends
+  
   //Store all necessary data Ends
 
   displaySec.innerHTML = `
