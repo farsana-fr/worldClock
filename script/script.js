@@ -40,13 +40,14 @@ function displayRes(data) {
   hrs = clock.split(":")[0];
   console.log(time);
   standard = time.slice(time.indexOf("+"));
+  
   //Handling negative GMT Starts
-  if(!Number(standard))
+  if(standard==0)
   {
     standard=time.slice(time.lastIndexOf("-"));
   }
   //Handling negative GMT Ends
-  
+
   //Store all necessary data Ends
 
   displaySec.innerHTML = `
